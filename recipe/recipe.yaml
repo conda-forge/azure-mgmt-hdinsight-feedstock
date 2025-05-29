@@ -9,7 +9,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-mgmt-hdinsight-${{ version }}.zip
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-mgmt-hdinsight-${{ version }}.tar.gz
   sha256: 72549e08ff3eed3d6e23835e73ece1cc32bdf340bdf8919e78916c352c200f64
 
 build:

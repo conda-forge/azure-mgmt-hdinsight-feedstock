@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-mgmt-hdinsight
-  version: 9.0.0
+  version: 9.0.0b3
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-mgmt-hdinsight-${{ version }}.zip
-  sha256: 41ebdc69c0d1f81d25dd30438c14fff4331f66639f55805b918b9649eaffe78a
+  sha256: 72549e08ff3eed3d6e23835e73ece1cc32bdf340bdf8919e78916c352c200f64
 
 build:
   number: 0
@@ -24,9 +24,10 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - msrest >=0.6.21
-    - azure-common >=1.1,<2.dev0
-    - azure-mgmt-core >=1.2.0,<2.0.0
+    - azure-common >=1.1
+    - azure-mgmt-core >=1.3.2
+    - isodate >=0.6.1
+    - typing-extensions >=4.6.0
 
 tests:
   - python:

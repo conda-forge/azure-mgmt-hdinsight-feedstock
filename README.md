@@ -32,14 +32,14 @@ Current release info
 Installing azure-mgmt-hdinsight
 ===============================
 
-Installing `azure-mgmt-hdinsight` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `azure-mgmt-hdinsight` from the `conda-forge/label/azure-mgmt-hdinsight_rc` channel can be achieved by adding `conda-forge/label/azure-mgmt-hdinsight_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/azure-mgmt-hdinsight_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `azure-mgmt-hdinsight` can be installed with `conda`:
+Once the `conda-forge/label/azure-mgmt-hdinsight_rc` channel has been enabled, `azure-mgmt-hdinsight` can be installed with `conda`:
 
 ```
 conda install azure-mgmt-hdinsight
@@ -54,26 +54,26 @@ mamba install azure-mgmt-hdinsight
 It is possible to list all of the versions of `azure-mgmt-hdinsight` available on your platform with `conda`:
 
 ```
-conda search azure-mgmt-hdinsight --channel conda-forge
+conda search azure-mgmt-hdinsight --channel conda-forge/label/azure-mgmt-hdinsight_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search azure-mgmt-hdinsight --channel conda-forge
+mamba search azure-mgmt-hdinsight --channel conda-forge/label/azure-mgmt-hdinsight_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search azure-mgmt-hdinsight --channel conda-forge
+mamba repoquery search azure-mgmt-hdinsight --channel conda-forge/label/azure-mgmt-hdinsight_rc
 
 # List packages depending on `azure-mgmt-hdinsight`:
-mamba repoquery whoneeds azure-mgmt-hdinsight --channel conda-forge
+mamba repoquery whoneeds azure-mgmt-hdinsight --channel conda-forge/label/azure-mgmt-hdinsight_rc
 
 # List dependencies of `azure-mgmt-hdinsight`:
-mamba repoquery depends azure-mgmt-hdinsight --channel conda-forge
+mamba repoquery depends azure-mgmt-hdinsight --channel conda-forge/label/azure-mgmt-hdinsight_rc
 ```
 
 
